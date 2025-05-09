@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Dress Store - Traditional & Modern Attire</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Kerala Dress Store Logo" width="40%">
+                Kerala Dress Store
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Elegant Dresses </h1>
+            <p>Discover timeless elegance with our exclusive collection of graceful dresses</p>
+            <a href="#collection" class="cta-button">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="collection" id="collection">
+        <h2>Featured Collection</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <img src="images/Gown.jpeg" alt="Designer Gown">
+                    <div class="popup-content">
+                        <div class="product-header">
+                            <h3>Designer Gown</h3>
+                            <p class="product-subtitle">Elegant Evening Gown</p>
+                            <p class="price">₹2,499</p>
+                            <p class="description">Elegant designer gown featuring premium chiffon fabric with floral print. Perfect for evening parties and special occasions.</p>
+                            <div class="price-container">
+                                <span class="original-price">₹3,499</span>
+                                <span class="discounted-price">₹2,499</span>
+                                <span class="discount-badge">28% off</span>
+                            </div>
+                        </div>
+
+                        <div class="product-details">
+                            <div class="size-section">
+                                <h4>Select Size</h4>
+                                <div class="size-options">
+                                    <label class="size-option">
+                                        <input type="radio" name="size" value="XS">
+                                        <span class="size-label">XS</span>
+                                    </label>
+                                    <label class="size-option">
+                                        <input type="radio" name="size" value="S">
+                                        <span class="size-label">S</span>
+                                    </label>
+                                    <label class="size-option">
+                                        <input type="radio" name="size" value="M">
+                                        <span class="size-label">M</span>
+                                    </label>
+                                    <label class="size-option">
+                                        <input type="radio" name="size" value="L">
+                                        <span class="size-label">L</span>
+                                    </label>
+                                    <label class="size-option">
+                                        <input type="radio" name="size" value="XL">
+                                        <span class="size-label">XL</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="product-info-section">
+                                <div class="info-block material-care">
+                                    <h4>Material & Care</h4>
+                                    <ul>
+                                        <li><strong>Fabric:</strong> Premium Chiffon</li>
+                                        <li><strong>Pattern:</strong> Floral Print</li>
+                                        <li><strong>Care Instructions:</strong> Dry Clean Only</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block size-fit">
+                                    <h4>Size & Fit</h4>
+                                    <ul>
+                                        <li><strong>Fit Type:</strong> A-line</li>
+                                        <li><strong>Length:</strong> Full Length</li>
+                                        <li><strong>Model Height:</strong> 5'7" wearing size M</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block design-features">
+                                    <h4>Design Features</h4>
+                                    <ul>
+                                        <li><strong>Neckline:</strong> V-neck</li>
+                                        <li><strong>Sleeve:</strong> Puff sleeves</li>
+                                        <li><strong>Closure:</strong> Back zipper</li>
+                                        <li><strong>Style:</strong> Party wear</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                      
+                    </div>
+                </div>
+                <h3>Designer Gown</h3>
+                <p>Elegant Evening Gown</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <img src="images/Vintage Cotton Linen Mid Sleeve Waist Slim Dress.jpeg" alt="Set Mundu">
+                    <div class="popup-content">
+                        <h3>Linen Mid Sleeve</h3>
+                        <p>Vintage Cotton Linen Mid Sleeve Waist Slim Dress</p>
+                        <p class="price">₹1,999</p>
+                        <p class="description">Elegant vintage-style dress made from premium cotton linen blend. Features comfortable mid-length sleeves and a flattering waist design.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Linen Mid Sleeve</h3>
+                <p>Vintage Cotton Linen Mid Sleeve Waist Slim Dress</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/Buy Gorgeous WS828 Dhanya Handloom Ikkat A-line Dress Online _ Kessa copy.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Ikkat A-line Dress</h3>
+                        <p>Dhanya Handloom Ikkat A-line Dress</p>
+                        <p class="price">₹2,299</p>
+                        <p class="description">Beautiful handloom Ikkat A-line dress featuring traditional patterns and comfortable fit. Perfect for both casual and formal occasions.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Ikkat A-line Dress</h3>
+                <p>Dhanya Handloom Ikkat A-line Dress</p>
+            </div>
+
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/Women's Elegant Ramie Retro Print Dress.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Ramie Retro Print Dress</h3>
+                        <p>Women's Elegant Ramie Retro Print Dress</p>
+                        <p class="price">₹1,899</p>
+                        <p class="description">Elegant retro-style dress made from premium Ramie fabric. Features beautiful print patterns and a classic silhouette.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Ramie Retro Print Dress</h3>
+                <p>Women's Elegant Ramie Retro Print Dress</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/Blue Silk Bandhani Kurta Set by ILAPTI.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Blue Silk Bandhani Kurta</h3>
+                        <p>Women's Elegant Silk Bandhani Kurta</p>
+                        <p class="price">₹3,499</p>
+                        <p class="description">Luxurious blue silk Bandhani kurta set featuring traditional tie-dye patterns. Perfect for festive occasions.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Blue Silk Bandhani Kurta</h3>
+                <p>Women's Elegant Silk Bandhani Kurta</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/cotton apple butta kurta set.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Kurta Set</h3>
+                        <p>Women's Elegant cotton apple butta kurta set</p>
+                        <p class="price">₹2,199</p>
+                        <p class="description">Beautiful cotton kurta set featuring delicate apple butta embroidery. Perfect for casual and semi-formal occasions.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Kurta Set</h3>
+                <p>Women's Elegant cotton apple butta kurta set</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/Blue Floral Maxi Dress.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Maxi Dress</h3>
+                        <p>Women's Elegant Blue Floral Maxi Dress</p>
+                        <p class="price">₹2,799</p>
+                        <p class="description">Stunning blue floral maxi dress with flowing silhouette. Perfect for summer events and special occasions.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Maxi Dress</h3>
+                <p>Women's Elegant Blue Floral Maxi Dress</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/Yellow Printed & Embroidered Kaftan by Archana Shah.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Kaftan</h3>
+                        <p>Women's Yellow Printed & Embroidered Kaftan</p>
+                        <p class="price">₹3,299</p>
+                        <p class="description">Designer kaftan by Archana Shah featuring intricate embroidery and vibrant yellow prints. Perfect for luxury resort wear.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Kaftan</h3>
+                <p>Women's Yellow Printed & Embroidered Kaftan</p>
+            </div>
+            <div class="collection-item">
+                <div class="image-placeholder" onclick="openPopup(this)">
+                    <!-- Add your image here -->
+                    <img src="images/Marta Smocked Midi Dress.jpeg" alt="Dress Materials">
+                    <div class="popup-content">
+                        <h3>Midi Dress</h3>
+                        <p>Women's Marta Smocked Midi Dress</p>
+                        <p class="price">₹2,599</p>
+                        <p class="description">Elegant midi dress featuring smocked detailing and comfortable fit. Perfect for both day and evening wear.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <h3>Midi Dress</h3>
+                <p>Women's Marta Smocked Midi Dress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="materials" id="materials">
+        <h2>Dress Materials</h2>
+        <div class="materials-grid">
+            <div class="material-item">
+                <div class="image-placeholder">
+                    <!-- Add your image here -->
+                    <img src="images/materials/Pure Cotton Materials.jpeg" alt="Cotton Materials">
+                </div>
+                <h3>Pure Cotton Materials</h3>
+                <p>Soft, breathable, and ideal for everyday wear; perfect for summer dresses, kurtis, and casual salwar suits.                </p>
+            </div>
+            <div class="material-item">
+                <div class="image-placeholder">
+                    <img src="images/materials/Chiffon.jpg" alt="Silk Materials">
+                </div>
+                <h3>Chiffon</h3>
+                <p>Sheer, airy fabric great for dupattas, evening gowns, and layered dresses.</p>
+            </div>
+            <div class="material-item">
+                <div class="image-placeholder">
+                    <img src="placeholder.jpg" alt="Silk Materials">
+                </div>
+                <h3>Georgette</h3>
+                <p>A slightly heavier flow than chiffon; perfect for sarees, anarkalis, and formal gowns.</p>
+            </div>
+            <div class="material-item">
+                <div class="image-placeholder">
+                    <img src="placeholder.jpg" alt="Silk Materials">
+                </div>
+                <h3>Linen</h3>
+                <p>Durable and breathable; suited for summer casual dresses, tunics, and simple kurtis.</p>
+            </div>
+            <div class="material-item">
+                <div class="image-placeholder">
+                    <!-- Add your image here -->
+                    <img src="placeholder.jpg" alt="Silk Materials">
+                </div>
+                <h3>Crepe</h3>
+                <p>Lightweight with a unique texture; ideal for stylish tops, dresses, and sarees.</p>
+            </div>
+            <div class="material-item">
+                <div class="image-placeholder">
+                    <!-- Add your image here -->
+                    <img src="placeholder.jpg" alt="Silk Materials">
+                </div>
+                <h3>Net</h3>
+                <p>Often embellished with embroidery; popular for party wear gowns, lehengas, and dupattas.</p>
+            </div>
+
+     <!-- last section -->
+
+        <div class="material-item">
+            <div class="image-placeholder">
+                <img src="placeholder.jpg" alt="Silk Materials">
+            </div>
+            <h3>Velvet</h3>
+            <p>Rich, plush feel, great for winter dresses, bridal lehengas, and evening gowns.</p>
+        </div>
+        <div class="material-item">
+            <div class="image-placeholder">
+                <img src="placeholder.jpg" alt="Silk Materials">
+            </div>
+            <h3>Net</h3>
+            <p>Often embellished with embroidery; popular for party wear gowns, lehengas, and dupattas.</p>
+        </div>
+        <div class="material-item">
+            <div class="image-placeholder">
+                <img src="placeholder.jpg" alt="Silk Materials">
+            </div>
+            <h3>Net</h3>
+            <p>Often embellished with embroidery, popular for party wear gowns, lehengas, and dupattas.</p>
+            </div>
+
+        <!-- last section -->
+
+        </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                <p><i class="fas fa-phone"></i> +91 85909396734</p>
+                <p><i class="fas fa-envelope"></i> dressstore@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> Aramala,Thrickodithanam,Changanacherry,686105</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kerala Dress Store</h3>
+                <p>Discover timeless elegance with our exclusive collection of graceful dresses</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#materials">Materials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kerala Dress Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <div id="imagePopup" class="popup">
+        <div class="popup-inner">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <img id="popupImage" src="" alt="">
+            <div id="popupDetails"></div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(element) {
+            const popup = document.getElementById('imagePopup');
+            const popupImg = document.getElementById('popupImage');
+            const popupDetails = document.getElementById('popupDetails');
+            const img = element.querySelector('img');
+            const content = element.querySelector('.popup-content');
+
+            popupImg.src = img.src;
+            popupDetails.innerHTML = content.innerHTML;
+            
+            // Add click event listener to the buy now button
+            const buyButton = popupDetails.querySelector('.buy-now');
+            if (buyButton) {
+                buyButton.addEventListener('click', function() {
+                    const productName = content.querySelector('h3').textContent;
+                    const productPrice = content.querySelector('.price').textContent;
+                    const productDesc = content.querySelector('.description').textContent;
+                    
+                    // Get selected size
+                    const selectedSize = popupDetails.querySelector('input[name="size"]:checked');
+                    const sizeText = selectedSize ? `Selected Size: ${selectedSize.value}\n` : 'Size: Not selected\n';
+                    
+                    // Create WhatsApp message with size information
+                    const message = `Hi, I'm interested in purchasing:\n\nProduct: ${productName}\nPrice: ${productPrice}\n${sizeText}Description: ${productDesc}\n\nPlease provide more details about this product.`;
+                    
+                    // Create WhatsApp URL with the message
+                    const whatsappURL = `https://wa.me/918590939674?text=${encodeURIComponent(message)}`;
+                    
+                    // Open WhatsApp in a new window
+                    window.open(whatsappURL, '_blank');
+                });
+            }
+            
+            popup.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('imagePopup');
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close popup when clicking outside the image
+        window.onclick = function(event) {
+            const popup = document.getElementById('imagePopup');
+            if (event.target == popup) {
+                closePopup();
+            }
+        }
+    </script>
+</body>
+</html>
