@@ -749,16 +749,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Add this at the appropriate section in your CSS */
-    .menu-toggle {
-        display: none;
-        cursor: pointer;
-        font-size: 1.5rem;
-        color: #2C3E50;
+    body.popup-open {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
-    
-    @media screen and (max-width: 768px) {
-    .material-item .popup-content {
+
+    .material-item .popup {
         position: fixed;
         top: 0;
         left: 0;
@@ -766,183 +764,59 @@ footer {
         bottom: 0;
         width: 100%;
         height: 100vh;
-        transform: none;
-        overflow-y: auto;
-        padding: 20px;
         background: white;
-        z-index: 1000;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .material-item .popup-content {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 60px); /* Adjust height to account for fixed elements */
+        padding: 20px;
+        overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+        background: white;
     }
 
     .material-item .product-header {
         padding-top: 60px;
+        margin-bottom: 20px;
     }
 
-    .material-item .quantity-selector,
-    .material-item .social-links-container,
-    .material-item .action-buttons {
-        margin-bottom: 15px;
+    .material-item .material-details,
+    .material-item .product-info-section {
+        margin-bottom: 20px;
     }
 
-    .material-item .buy {
+    .material-item .buy-now {
         position: fixed;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        width: calc(100% - 40px);
-        margin: 0;
-        z-index: 1001;
-    }
-
-    .material-item .dimension-inputs {
-        margin-bottom: 80px;
-    }
-
-    .menu-toggle {
-        display: block;
-        z-index: 1001;
-    }
-
-    .nav-links {
-        display: none;
-        position: fixed;
-        top: 80px;
+        bottom: 0;
         left: 0;
         width: 100%;
-        height: auto;
-        background: rgba(255, 255, 255, 0.98);
-        flex-direction: column;
-        padding: 2rem 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        text-align: center;
+        padding: 15px;
+        background: #ff3e6c;
+        color: white;
+        border: none;
+        border-radius: 0;
+        z-index: 1002;
     }
-    
-        .nav-links.active {
-            display: flex;
-        }
-    
-        .nav-links li {
-            margin: 1.5rem 0;
-        }
-    
-        .nav-links a {
-            font-size: 1.1rem;
-            padding: 0.5rem 0;
-        }
-    
-        .logo {
-            font-size: 1.4rem;
-        }
-    
-        .logo img {
-            width: 120px;
-        }
+
+    .material-item .popup-content {
+        padding-bottom: 80px;
     }
-    
-    @media screen and (max-width: 1024px) {
-        .hero h1 {
-            font-size: 2.8rem;
-        }
-        
-        .collection, .materials {
-            padding: 5rem 1.5rem;
-        }
+
+    .material-item .close-popup {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1003;
     }
-    
-    @media screen and (max-width: 768px) {
-        .menu-toggle {
-            display: block;
-        }
-    
-        .nav-links {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            flex-direction: column;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-    
-        .nav-links.active {
-            display: flex;
-        }
-    
-        .nav-links li {
-            margin: 1rem 0;
-        }
-    
-        .hero h1 {
-            font-size: 2.2rem;
-        }
-    
-        .hero p {
-            font-size: 1.1rem;
-        }
-    
-        .collection-grid, .materials-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-    
-        .contact-container {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    @media screen and (max-width: 480px) {
-        .logo {
-            font-size: 1.4rem;
-        }
-    
-        .hero h1 {
-            font-size: 1.8rem;
-        }
-    
-        .collection-grid, .materials-grid {
-            grid-template-columns: 1fr;
-        }
-    
-        .image-placeholder {
-            height: 350px;
-        }
-    
-        .footer-content {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-    
-        .social-links {
-            justify-content: center;
-        }
-    }
-    
-    @media (hover: none) {
-        .nav-links a:hover {
-            border-bottom: none;
-        }
-    
-        .collection-item:hover,
-        .material-item:hover {
-            transform: none;
-        }
-    
-        .collection-item:active,
-        .material-item:active {
-            transform: scale(0.98);
-        }
-    }
-    
-    .nav-links a:hover {
-        color: #34495E;
-        border-bottom: 2px solid #34495E;
-    }
-    
-    .nav-links a:hover {
-        color: #34495E;
-        border-bottom: 2px solid #34495E;
+
+    .material-item .popup-content > * {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -1043,5 +917,4 @@ footer {
     .popup-content .social-link {
         width: 80%;
     }
-}
 }

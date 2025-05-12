@@ -1364,7 +1364,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Net Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Smooth and glossy surface; used for luxurious gowns, blouses, and evening dresses.</p>
                         <center>
@@ -1543,7 +1543,7 @@ function openMaterialPopup(element) {
     if (buyButton) {
         buyButton.addEventListener('click', function() {
             const materialName = content.querySelector('h3').textContent;
-            const pricePerMeter = content.querySelector('.price').textContent;
+            const pricePerMeter = content.querySelector('.prices').textContent;
             const materialDesc = content.querySelector('.description').textContent;
             const height = heightInput ? heightInput.value : '1';
             const width = widthInput ? widthInput.value : '1';
@@ -1554,7 +1554,7 @@ function openMaterialPopup(element) {
             // Create WhatsApp message
             const message = `Hi, I'm interested in purchasing:\n\n` +
                 `Material: ${materialName}\n` +
-                `Price: ${pricePerMeter}\n` +
+                `Prices: ${pricePerMeter}\n` +
                 `Dimensions Required:\n` +
                 `- Height: ${height} meters\n` +
                 `- Width: ${width} meters\n` +
@@ -1574,5 +1574,6 @@ function openMaterialPopup(element) {
 function closeMaterialPopup() {
     const popup = document.getElementById('materialPopup');
     popup.style.display = 'none';
+    
 }
 </script>
