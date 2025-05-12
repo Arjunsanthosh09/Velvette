@@ -15,8 +15,9 @@
         <nav>
             <div class="logo">
                 <img src="images/logo/logo.png" alt="Kerala Dress Store Logo" width="40%">
-               <h5>Velvette Wardobe</h5>
+                <h5>Velvette Wardobe</h5>
             </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#collection">Collection</a></li>
@@ -929,7 +930,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Cotton Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Soft, breathable, and ideal for everyday wear; perfect for summer dresses, kurtis, and casual salwar suits.</p>
                         <center>
@@ -983,7 +984,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Chiffon Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Sheer, airy fabric great for dupattas, evening gowns, and layered dresses.</p>
                         <center>
@@ -1037,7 +1038,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Georgette Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">A slightly heavier flow than chiffon; perfect for sarees, anarkalis, and formal gowns.</p>
                         <center>
@@ -1092,7 +1093,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Linen Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Durable and breathable; suited for summer casual dresses, tunics, and simple kurtis.</p>
                         <center>
@@ -1147,7 +1148,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Crepe Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Lightweight with a unique texture; ideal for stylish tops, dresses, and sarees.</p>
                        <center>
@@ -1201,7 +1202,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Net Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Often embellished with embroidery; popular for party wear gowns, lehengas, and dupattas.</p>
                         <center>
@@ -1255,7 +1256,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Net Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Rich, plush feel, great for winter dresses, bridal lehengas, and evening gowns.</p>
 
@@ -1310,7 +1311,7 @@
                         </center>
                         
                         <p class="material-subtitle">Premium Quality Net Fabric</p>
-                        <center><p class="price">₹299/meter</p></center>
+                        <center><p class="prices"><button class="buy" style="width: 120px;">₹299/meter</button></p></center>
                         
                         <p class="description">Thin, plain weave with a crisp finish; ideal for bridal wear, dupattas, and festive outfits.</p>
                         <center>
@@ -1521,6 +1522,12 @@
             }
         }
     </script>
+    <script>
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+</script>
 </body>
 </html>
 
