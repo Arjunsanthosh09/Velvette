@@ -192,10 +192,18 @@ h2:after {
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
+    border: 2px solid #e1e1e1; /* Added border */
 }
 
-.popup-content {
-    display: none;
+.image-placeholder:hover {
+    border-color: #34495E; /* Border color changes on hover */
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .popup {
@@ -210,6 +218,11 @@ h2:after {
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+/* Ensure popup content is properly displayed */
+.popup-content {
+    display: none; /* This stays as none, it's used for storing data */
 }
 
 .popup-inner {
@@ -463,29 +476,84 @@ h2:after {
 .contact {
     background: #f8f9fa;
     padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
 }
 
 .contact-info {
+    text-align: center;
     padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-info h3 {
+    color: #2C3E50;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
 .contact-info p {
     margin: 1.5rem 0;
     font-size: 1.1rem;
     color: #2C3E50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .contact-info i {
-    margin-right: 1rem;
     color: #34495E;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 5rem 1rem;
+    }
+
+    .contact-container {
+        gap: 2rem;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        padding: 1rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 .contact-form {
@@ -626,7 +694,6 @@ footer {
     background: rgba(0, 0, 0, 0.7);
 }
 
-/* Adjust popup content to account for back button */
 .popup-inner {
     padding-top: 20px;
 }
@@ -812,7 +879,6 @@ footer {
         }
     }
     
-    /* Touch Device Optimizations */
     @media (hover: none) {
         .nav-links a:hover {
             border-bottom: none;
@@ -838,4 +904,104 @@ footer {
         color: #34495E;
         border-bottom: 2px solid #34495E;
     }
+}
+
+.quantity-selector {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-selector input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.material-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.material-details {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.material-details h4 {
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.material-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.material-details li {
+    margin: 8px 0;
+    color: #666;
+}
+
+.material-details li strong {
+    color: #212121;
+    margin-right: 10px;
+}
+
+/* Social Links for Dress Popup */
+.popup-content .social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.popup-content .social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    justify-content: center;
+}
+
+.popup-content .social-link.youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.popup-content .social-link.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    color: white;
+}
+
+.popup-content .social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content .social-link i {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .popup-content .social-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-content .social-link {
+        width: 80%;
+    }
+}
 }
