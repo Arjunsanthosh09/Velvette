@@ -758,7 +758,7 @@ footer {
     }
     
     @media screen and (max-width: 768px) {
-    .popup-content {
+    .material-item .popup-content {
         position: fixed;
         top: 0;
         left: 0;
@@ -767,7 +767,6 @@ footer {
         width: 100%;
         height: 100vh;
         transform: none;
-        max-height: none;
         overflow-y: auto;
         padding: 20px;
         background: white;
@@ -775,22 +774,28 @@ footer {
         -webkit-overflow-scrolling: touch;
     }
 
-    .product-header {
+    .material-item .product-header {
         padding-top: 60px;
     }
 
-    .quantity-selector,
-    .social-links-container,
-    .action-buttons {
+    .material-item .quantity-selector,
+    .material-item .social-links-container,
+    .material-item .action-buttons {
         margin-bottom: 15px;
     }
 
-    .buy-now {
-        position: sticky;
-        bottom: 0;
-        width: 100%;
-        margin: 20px 0;
+    .material-item .buy {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+        margin: 0;
         z-index: 1001;
+    }
+
+    .material-item .dimension-inputs {
+        margin-bottom: 80px;
     }
 
     .menu-toggle {
